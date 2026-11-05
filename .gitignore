@@ -1,0 +1,8 @@
+.idea
+.vscode
+node_modules
+dist
+src/dist
+.cache
+.parcel-cache
+backstop_data
