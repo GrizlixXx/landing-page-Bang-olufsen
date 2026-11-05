@@ -3,7 +3,7 @@
 
 .product {
   @include on-desktop {
-    max-width: 324px;
+    max-width: 440px;
   }
 
   &__photo {
@@ -13,7 +13,7 @@
     max-width: 600px;
 
     @include on-desktop {
-      max-width: 324px;
+      max-width: 440px;
       display: block;
     }
   }
