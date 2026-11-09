@@ -21,6 +21,7 @@
   }
 
   &__content {
+    box-sizing: border-box;
     padding: 48px 0;
     display: block;
 
@@ -33,12 +34,18 @@
 
       padding: 120px 0;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      max-width: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 24px;
     }
 
     @include on-desktop {
-      max-width: 1024px;
+      width: 100%;
+      max-width: none;
+      margin-inline: auto;
+      grid-template-columns: minmax(0, 440px) minmax(0, 500px);
+      justify-content: space-between;
     }
   }
 
